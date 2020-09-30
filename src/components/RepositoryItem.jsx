@@ -21,7 +21,7 @@ const RepositoryItem = ({
 
   return (
     <View style={styles.container}>
-      <Image style={styles.tinyLogo} source={ownerAvatarUrl}></Image>
+      <Image style={styles.tinyLogo} source={{uri: {ownerAvatarUrl}}}></Image>
       <Text>Full name: {fullName}</Text>
       <Text>Description: {description}</Text>
       <Text>Language: {language}</Text>
